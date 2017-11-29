@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>商品主页</title>
+    <title>商品详情页2：商品图片带有放大镜效果</title>
+    <meta name="author" content="xiaoma"/>
+    <meta name="description" content="imitateWeb"/>
+    <meta name="keywords" content="good,detail"/>
+    <meta name="copyright" content="xiaoma所有"/>
+    <!--打开网页，顶部标签页右侧显示图标-->
+    <link rel="Shortcut Icon" href="img/horse.ico">
+    <!--引入外部样式表-->
+    <link rel="stylesheet" href="css/resetcss.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+	function woyaoliuyan(){
+	$("#liuyan").fadeToggle("slow");
+	}
+</script>
+</head>
+
+<body>
+<div id="header">
+    <ul id="leftlist" class="list">
+        <li><a href="mainpage.html" class="link">请登录 / 注册</a></li>
+		<li><a href="#" onclick=history.back() class="link">返回</a></li>
+    </ul>
+    <ul id="rightlist" class="list">
+        
+        <li><a href="#" class="link">举报卖家</a></li>
+        <li class="haschild"><a onclick=alert("站长:abc\n联系qq:123456789") class="link">联系我们</a></li>
+          
+    </ul>
+</div>
+
+ <div id="content">
+     <div id="shop">
+        <a href="person.html">
+            <div id="shopname">卖家：fengziyang</div>
+        </a>
+      
+    </div> 
+	
+    <div id="goodshow">
+        <div id="imags" style="overflow: visible">
+            <div class="imgbox">
+                <!-- 商品大图 -->
+                <a class="smallimg" href="#">
+                    <img id="smallimg" alt="加载中..." src="img/good1.jpg">
+                </a>
+                <!--商品细节大图-->
+                <div class="bigbox">
+                    <img id="bimg" alt="加载中..." src="img/good1.jpg">
+                </div>
+                <!--大图上的显示区域遮罩层-->
+                <div id="layer">
+                </div>
+            </div>
+            <!--缩略图-->
+            <div class="imgsbox">
+                <ul id="imgslist">
+                    <li class="imglist selected">
+                        <!-- 商品小图 -->
+                        <img class="simg" alt="加载中..." src="img/good1.jpg">
+                    </li>
+                    <li class="imglist">
+                        <!-- 商品小图 -->
+                        <img class="simg" alt="加载中..." src="img/good2.jpg">
+                    </li>
+                    <li class="imglist">
+                        <!-- 商品小图 -->
+                        <img class="simg" alt="加载中..." src="img/good3.jpg">
+                    </li>
+                    <li class="imglist">
+                        <!-- 商品小图 -->
+                        <img class="simg" alt="加载中..." src="img/good4.jpg">
+                    </li>
+                    <li class="imglist">
+                        <!-- 商品小图 -->
+                        <img class="simg" alt="加载中..." src="img/good5.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="imgtxt">
+            <h2>戴尔DELL灵越燃7000 R1605S 14.0英寸轻薄窄边框笔记本电脑(i5-7200U 8G 256GSSD FHD Win10)</h2>
+
+            <div class="goodinfo">【三边全景7mm微边框、77% 超高屏占比、金属材质】七代i5双核CPU、全高清显示屏。尊享2年上门服务！</div>
+            <div class="goodinfo">价格&nbsp;&nbsp;&nbsp;&nbsp;<span class="price" id="jiage">300.00</span></div>
+            <div class="goodinfo">押金&nbsp;&nbsp;&nbsp;&nbsp;<span class="price" id="yajin">5300.00</span></div>
+            <div class="goodinfo">配送&nbsp;&nbsp;&nbsp;&nbsp;<span class="price">大工西门面交</span></div>
+			<div class="goodinfo">能否砍价&nbsp;&nbsp;&nbsp;&nbsp;<span class="price">否</span></div>
+			<!-- <div class="goodinfo">留言&nbsp;&nbsp;&nbsp;&nbsp;<span class="price">空</span></div> -->
+            <!-- <div class="goodinfo" id="size">尺码&nbsp;&nbsp;&nbsp;&nbsp;
+                <p class="block">S</p>
+
+                <p class="block">M</p>
+
+                <p class="block">L</p></div>
+            <div class="goodinfo" id="color">颜色&nbsp;&nbsp;&nbsp;&nbsp;<p class="block">粉色</p>
+
+                <p class="block">白色</p>
+
+                <p class="block">黑色</p></div>
+            <div class="goodinfo">数量&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min="1" id="num" value="1"/></div> -->
+            <div class="goodinfo"><a href="person.html"><input type="button" value="联系我" class="btngood" id="btnbuy"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<input
+                    type="button" value="留言" class="btngood" id="btnadd" onclick=woyaoliuyan() />&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="提交订单" class="btngood" id="tijiaodingdan" onclick=dingdan() />
+                    <div id="liuyan" style="display:none"><form><textarea style="min-height: 80px;width: 253px;"></textarea>
+                    	<br /><button type="submit" class="btngood" >提交</button></form></div>
+            </div>
+        </div>
+         <div id="recommend">
+            <h2>留言</h2>
+
+            <div id="rgood">
+                <ul>
+                    <li>
+						我想要！
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            <div id="arrow">
+                <p id="arrtop"></p>
+
+                <p id="arrbot"></p>
+            </div>
+        </div> 
+    </div>
+    <div id="gooddetail">
+
+    </div>
+</div>
+
+<!--显示高清大图-->
+<div id="showbigimg"><img src="img/good1.jpg" id="bigimg"></div>
+<script src="js/publicgood.js"></script>
+<script src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/mejqzoom.js"></script>
+<script>
+	function dingdan(){
+		var a=confirm("现在你需要交"+jiage.innerText+"元的使用费和"+yajin.innerText+"的租金");
+		if(a==1){
+		myWindow=window.open();
+		var zongjia=new Number(jiage.innerText)+Number(yajin.innerText);
+	myWindow.document.write("现在支付"+zongjia+"元");}
+	}
+</script>
+
+</body>
+</html>
