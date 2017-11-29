@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>求租求购</title>
+		<link type="text/css" rel="stylesheet" href="css/ershou.css" />
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/friend.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/woyaofabu.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+				<link rel="stylesheet" type="text/css" href="css/qiuzuqiugou.css" />
+
+		<link rel="stylesheet" type="text/css" href="woyaofabu2.css" />
+		<script type="text/javascript" src="woyaofabu.js"></script>
+		<script src="js/biaodan.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('form.NiceIt').NiceIt();
+			});
+
+			function woyaofabu() {
+				$("#fabu").fadeIn("slow");
+			}
+
+			function woyaoqiugou() {
+				$("#qiugou").fadeIn("slow");
+			}
+
+			function guanbi() {
+				$("#fabu").fadeOut("slow");
+			}
+		</script>
+		<style>
+			.raise {
+				color: #d497b9;
+				hover: #d009b7;
+				float: left;
+			}
+			
+			button {
+				-webkit-transition: 0.25s;
+				transition: 0.25s;
+				background: none;
+				border: 2px solid;
+				font: inherit;
+				line-height: 1;
+				margin: 1em;
+				padding: 1em 1em;
+				border-radius: 15px;
+			}
+			
+			button:hover {
+				border-color: var(--hover);
+				color: #d009b7;
+			}
+			
+			.son {
+				margin-top: 40px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="fabu" style="display:none;float:left;margin-left:28%;width:650px;max-height:540px;border:4px solid;z-index: 100000;position: fixed;background:rgba(255,254,244,0.95);">
+			<div id="page" style="height:750px;padding-top: 5px;;">
+				<div class="right-column">
+					<div style="float:right;"><i class="fa fa-minus-square" onclick=guanbi() style="font-size:30px;color:rgba(251,62,62,0.6)"></i></div>
+					<form action="" method="post" class="fm NiceIt">
+						<p>
+
+							<label for="tiemail">物品名称: </label>
+							<input type="text" id="tiemail" />
+						</p>
+						<p>
+							<label for="tiemail">地址: </label>
+							<input type="text" id="tiemai" />
+						</p>
+						<div class="ctrls-set">
+							<p>
+								<input type="radio" name="gender" value="male" id="tradio_1" checked="checked" />
+								<label for="tradio_1">西山生活区</label>
+							</p>
+							<p>
+								<input type="radio" name="gender" value="female" id="tradio_2" />
+								<label for="tradio_2">北山生活区</label>
+							</p>
+
+						</div>
+						<p>
+							<label for="titems">交易类型</label>
+							<select name="items" id="titems">
+								<option value="val_1">我要求租</option>
+								<option value="val_2">我要求购</option>
+							</select>
+
+						</p>
+						<p>
+							<label for="tiemail">价格: </label>
+							<input type="text" id="price" />
+						</p>
+						<div class="ctrls-set">
+							<p>
+
+							</p>
+
+						</div>
+
+						<p style="display:none;" id="yajin"><label for="yajin"></label>
+
+						</p>
+
+						<p>
+							<label for="tdetails">形容一下你的宝贝:</label>
+							<input type="text" id="details" />
+						</p>
+
+						<p class="buttons">
+							<button type="submit" onmousedown=zhifu(0)>发布</button>
+							<button type="reset">重填</button>
+
+						</p>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+		<div style="height:50px;float:left;position:fixed;top:40px;left:10px;;z-index: 1000;">
+			<a href="mainpage.html"><button class="raise son">咸鱼主页</button></a><br />
+			<a onclick=woyaofabu()><button class="raise son">求租求购</button></a>
+
+		</div>
+		</div>
+
+		<div id="biaotilan" style="width:100%;height:45px;background-color: #f7b6da;"><img src="img/up.png" style="width:30px;float:left;margin-left:40%;margin-top:5px;">
+			<p style="float:right;margin-right:45%;font-family:Microsoft YaHei;font-size:2.2em;font-weight: 600;"> 求 租 求 购 </p>
+		</div>
+		<div style="width:85%;margin-right:20px;margin-top:20px;;min-height: 100px;float:right;">
+			<div class="neirong" >
+					
+						<div class="time neirong2">求购一个九成新的小米原装充电器!大概20上下</div>
+						
+						<div style="text-decoration:none;float:right;margin-right:3%;margin-top:2%;"><span style="color: #AAAAAA">2017.3.1</span><br />
+						<a onclick=alert("联系方式:qq1231231") style="color:blue;">我要应答</a>
+						</div>
+						
+						
+						</div>
+		</div>
+		<div style="width:85%;margin-right:20px;margin-top:20px;;min-height: 100px;float:right;">
+			<div class="neirong" >
+					
+						<div class="time neirong2">求购一个九成新的小米原装充电器!大概20上下</div>
+						
+						<div style="text-decoration:none;float:right;margin-right:3%;margin-top:2%;"><span style="color: #AAAAAA">2017.3.1</span><br />
+						<a onclick=alert("联系方式:qq1231231") style="color:blue;">我要应答</a>
+						</div>
+						
+						
+						</div>
+		</div>
+		<div  id="mymessage" style="width:85%;margin-right:20px;margin-top:20px;;min-height: 100px;float:right;">
+			<div class="neirong" >
+					
+						<div class="time neirong2">求购一个九成新的小米原装充电器!大概20上下</div>
+						
+						<div style="text-decoration:none;float:right;margin-right:3%;margin-top:2%;"><span style="color: #AAAAAA">2017.3.1</span><br />
+						<a onclick=alert("对方联系方式:qq1231231") style="color:blue;">我要应答</a><br />
+						<a onclick=shanchu() style="color:red;">删除我的此条信息</a>
+
+						</div>
+						
+						
+						</div>
+		</div>
+<script>
+	function shanchu(){
+		var a=confirm("你真的要删除吗?")
+		if(a==1){
+		$("#mymessage").fadeOut("slow");
+		}
+	}
+</script>
+	</body>
+
+</html>

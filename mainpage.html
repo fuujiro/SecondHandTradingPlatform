@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>大工咸鱼</title>
+		<link rel="stylesheet" href="css/mainpage.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet " href="css/icon.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="css/ershou.css">
+
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	</head>
+
+	<body onload="load();">
+		
+		<canvas id="background"></canvas>
+
+<script async type="text/javascript" src="js/background.js"></script>
+
+		<section class="panel home" name="home1" data-section-name="home1">
+			<div class="inner" style="padding-top:2.5%;">
+				<div><a href="#overview" id="1111" class="scroll" style="display:none"></a></div>
+
+				<div class="container" id="nologin" style="display:block;padding-top:10px;color:#6a6f8c;font:600 16px/18px 'Open Sans',sans-serif;">
+					<div class="login-wrap">
+						<div class="login-html">
+							<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登录</label>
+							<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">注册</label>
+							<div class="login-form">
+								<div class="sign-in-htm">
+									<div class="group">
+										<label for="user" class="label">用户名</label>
+										<input id="user" type="text" class="input" placeholder="用户ID/邮箱/手机号">
+									</div>
+									<div class="group">
+										<label for="pass" class="label">密码</label>
+										<input id="pass" type="password" class="input" data-type="password" placeholder="注意大小写、半全角">
+									</div>
+									<br />
+									<div class="group">
+										<input id="check" type="checkbox" class="check" checked>
+										<!--<label for="check"><span class="icon"></span> Keep me Signed in</label></-->
+									</div>
+									<div class="group">
+										<input type="submit" class="button" value="登录">
+									</div>
+									<div class="hr"></div>
+									<div class="foot-lnk">
+										<a onclick=alert("请联系管理员\nqq:769917680")>忘记密码?</a>
+									</div>
+								</div>
+								<div class="sign-up-htm">
+									<div class="group">
+										<label for="user" class="label">用户名</label>
+										<input id="user" type="text" class="input" placeholder="6位以上只允许字母、数字或者下划线&quot_&quot">
+									</div>
+									<div class="group">
+										<label for="pass" class="label">密码</label>
+										<input id="pass" type="password" class="input" data-type="password" placeholder="6位以上允许字母、数字或者常见字符">
+									</div>
+									<div class="group">
+										<label for="pass" class="label">重复密码</label>
+										<input id="pass" type="password" class="input" data-type="password">
+									</div>
+									<div class="group">
+										<label for="pass" class="label">联系QQ</label>
+										<input id="pass" type="text" class="input">
+									</div>
+									<div class="group">
+										<input type="submit" class="button" value="注册">
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="container" id="yeslogin" style="display:none;padding-top:10px;color:#6a6f8c;font:600 16px/18px 'Open Sans',sans-serif;">
+					<div class="login-wrap">
+						<div class="login-html">
+							<div class="login-form">
+								<p style="text-align: center;"> 欢迎</p>
+								<p id="membername" style="color:white;text-align: center;margin-top:20%;">123123</p>
+									
+									
+									<div class="group" style="position:fixed; width:100%;;bottom:0;">
+										<a href="person.html" style="text-decoration: none;"><input class="button" style="text-align: center;;"value="我的个人主页"></a>
+									</div>
+									
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+<a href="#overview" class="scroll" style="margin-top:5%;float:right;;	">
+				
+			</a>
+			</div>
+			
+		</section>
+
+		<section id="p2" class="panel overview" data-section-name="overview">
+			
+
+			<!--<a href="#home" class="scroll" style="margin-top:13%;float:right;margin-right:45%;	transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); ">
+				<p style="float:right;margin-top:25%;font-size: 1em;transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);">点此登录!!</p>
+			</a>-->
+			<div class=" inner icon" >
+				<a href="#home1"  class="scroll" style="text-decoration:none;margin-top:15%;float:right;margin-right:-50px;transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);;	">
+				
+				<p style="font-size:1em;transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);">登录/注册</p>
+			</a>
+			
+			
+				<div style="height:200px;width:300px;"></div>
+				<div id="ershou" class="carre_couleur base_hov tubiao" style="background-color: #ffce91;">
+					<a target="_blank" href="ershou.html">
+						<div class="retract" style="background-color: #ffce91;" ><img src="img/money.png" style=" width:200px;height:200px;"></div>
+						<div class="acced">
+							<div class="big_acced" style="color: #ff9f27;">二手买卖</div>
+							<div class="middle_acced"> </div>
+						</div>
+					</a>
+				</div>
+				<div id="zulin" class="carre_couleur base_hov tubiao" style="background-color: #a0dcfb;">
+					<a target="_blank" href="zulin.html">
+						<div class="retract" style="background-color: #a0dcfb;"><img style=" width:200px;height:200px;" src="img/shake.png"></div>
+						<div class="acced">
+							<div class="big_acced" style="color: #1296db;">二手租赁</div>
+							<div class="middle_acced"></div>
+						</div>
+					</a>
+				</div>
+				<div id="ziyuan" class="carre_couleur base_hov tubiao" style="background-color: #f1ec9b;">
+					<a target="_blank" href="mianfei.html">
+						<div class="retract" style="background-color: #f1ec9b;"><img style=" width:200px;height:200px;"src="img/free.png"></div>
+						<div class="acced">
+							<div class="big_acced" style="color: #ada507 ;">免费资源</div>
+							<div class="middle_acced"> </div>
+						</div>
+					</a>
+				</div>
+				<div id="fabu" class="carre_couleur base_hov tubiao" style="background-color: #f7b6da;">
+					<a target="_blank" href="qiuzuqiugou.html">
+						<div class="retract" style="background-color: #f7b6da;"><img style=" width:200px;height:200px;"src="img/up.png"></div>
+						<div class="acced">
+							<div class="big_acced" style="color: #a60295;">求租求购</div>
+							<div class="middle_acced"> </div>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+		</section>
+
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/jquery.scrollify.min.js"></script>
+		<script>
+			$(function() {
+
+				$(".panel").css({
+					"height": $(window).height()
+				});
+				var timer;
+
+				$(window).resize(function() {
+					clearTimeout(timer);
+					timer = setTimeout(function() {
+						$(".panel").css({
+							"height": $(window).height()
+						});
+					}, 40);
+				});
+
+				$.scrollify({
+					section: ".panel"
+				});
+
+				$(".scroll").click(function(e) {
+					e.preventDefault();
+					$.scrollify("move", $(this).attr("href"));
+				});
+			});
+			function checklogin(e,login){
+				if(login==1){
+					e.style.display="none";
+					document.getElementById("yeslogin").style.display="block";
+				}
+			}
+			function load() {
+				var login=0;
+				document.getElementById("1111").click();
+				checklogin(document.getElementById("nologin"),login);
+				$("#background").fadeTo(1,0.7);	
+				$("#background").fadeTo(20000,1);
+				$("#background").fadeTo(5000,0.6);
+				$("#background").fadeTo(5000,1);
+			}
+		</script>
+	</body>
+
+</html>
